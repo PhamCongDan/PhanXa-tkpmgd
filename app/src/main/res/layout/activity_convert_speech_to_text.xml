@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_convert_speech_to_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#04a9f5"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context="hcmute.it.danpham.phanxaprojusingtranslateapi.ConvertSpeechToText">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="75"
+        android:layout_marginTop="15dp"
+        android:layout_margin="15dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_header_relativelayout"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Your Voice:"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+
+            android:textColor="@color/colorYellow"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDeBai" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:civ_fill_color="@android:color/white"
+            app:civ_border_color="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_mic_black_24dp"
+            />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVoice" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

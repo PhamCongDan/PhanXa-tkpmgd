@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_man_hinh_chinh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#04a9f5"
+    tools:context="hcmute.it.danpham.phanxaprojusingtranslateapi.ManHinhChinhActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:weightSum="10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:id="@+id/btnPlay"
+            android:src="@drawable/ic_play_circle_outline_black_24dp"
+            android:gravity="bottom"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:layout_weight="4"
+            android:layout_height="100dp">
+
+            <Button
+                android:text="Nhap data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+
+                android:id="@+id/btnNhapData" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

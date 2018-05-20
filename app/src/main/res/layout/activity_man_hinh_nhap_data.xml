@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_man_hinh_nhap_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="hcmute.it.danpham.phanxaprojusingtranslateapi.ManHinhNhapDataActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:background="@drawable/custom_edittext"
+            android:hint="Enter Text"
+            android:textSize="22dp"
+            android:textColor="@android:color/black"
+
+            android:ems="10"
+            android:layout_gravity="center"
+            android:id="@+id/txtInput"
+            android:layout_weight="8" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add_circle_black_24dp"
+            android:id="@+id/btnThem"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_volume_up_black_24dp"
+            android:id="@+id/btnVolume"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvInput" />
+
+</LinearLayout>
